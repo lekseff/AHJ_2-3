@@ -1,0 +1,51 @@
+* {
+	padding:0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: rgb(214, 211, 211);
+}
+
+#table {
+	background-color: #fff;
+}
+
+td {
+	padding: 5px 10px;
+}
+
+th {
+	padding: 2px 20px;
+	background-color: rgb(178, 178, 178);
+}
+
+.sort {
+	position: relative;
+	background-color: rgb(255, 158, 74);
+}
+
+.sort-up::after {
+	position: absolute;
+	content: '';
+	width: 12px;
+	height: 12px;
+	top: 6px;
+	right: 1px;
+	background-image: url('../../pic/down-arrow-svgrepo-com.svg');
+}
+
+.sort-down::after {
+	position: absolute;
+	content: '';
+	width: 12px;
+	height: 12px;
+	top: 6px;
+	right: 1px;
+	background-image: url('../../pic/up-arrow-svgrepo-com.svg');
+}
